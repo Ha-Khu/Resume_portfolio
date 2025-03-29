@@ -1,5 +1,12 @@
 <?php 
 	include 'partials/header.php';
+	include '_inc/functions.php';
+
+	$formData = null;
+
+	if($_SERVER["REQUEST_METHOD"] === "POST") {
+		$formData = nacitanieFormulara();
+	}
 ?>
 <!-- START HOME -->
 	<section id="home" class="templatemo-home">

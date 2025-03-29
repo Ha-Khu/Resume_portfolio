@@ -7,19 +7,19 @@
 				</div>
 				<div class="col-md-1 col-sm-1"></div>
 				<div class="col-md-10 col-sm-10">
-					<form action="#" method="post">
+					<form action="" method="post">
 						<div class="col-md-6 col-sm-6">
-							<input class="form-control" type="text" placeholder="Your Name">
+							<input class="form-control" type="text" placeholder="Your Name" id="name" name="name" required>
 						</div>
 						<div class="col-md-6 col-sm-6">
-							<input class="form-control" type="email" placeholder="Your Email">
+							<input class="form-control" type="email" placeholder="Your Email" id="email" name="email" required>
 						</div>
 						<div class="col-md-12 col-sm-12">
-							<input class="form-control" type="text" placeholder="Your Subject">
-							<textarea class="form-control" placeholder="Your Message" rows="6"></textarea>
+							<input class="form-control" type="text" placeholder="Your Subject" id="subject" name="subject" required>
+							<textarea class="form-control" placeholder="Your Message" rows="6" id="message" name="message" required></textarea>
 						</div>
 						<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
-							<input class="form-control" type="submit" value="SHOOT MESSAGE">
+							<input class="form-control" type="submit" value="SHOOT MESSAGE" id="submit" name="submit">
 						</div>
 					</form>
 				</div>
