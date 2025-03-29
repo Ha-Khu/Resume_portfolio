@@ -1,56 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="">
-	<meta name="description" content="">
-	<!-- SITE TITLE -->
-	<title>Ultra Profile HTML5 Template</title>
-
-	<!-- STYLESHEETS -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/templatemo-style.css">
-	<link href='//fonts.googleapis.com/css?family=Raleway:400,300,600,700' rel='stylesheet' type='text/css'>
-<!-- 
-
-Ultra Profile
-
-https://templatemo.com/tm-464-ultra-profile
-
--->
-</head>
-<body data-spy="scroll" data-target="#rock-navigation">
-	<!-- START NAVIGATION -->
-	<div class="navbar navbar-default bs-dos-nav navbar-fixed-top sticky-navigation" role="navigation">
-		<div class="container">
-
-			<div class="navbar-header">
-				<button class="navbar-toggle" data-toggle="collapse" data-target="#rock-navigation">
-					<span class="icon icon-bar"></span>
-					<span class="icon icon-bar"></span>
-					<span class="icon icon-bar"></span>
-				</button>
-				<a href="#" class="navbar-brand">Ultra Profile</a>
-			</div>
-			<nav class="collapse navbar-collapse" id="rock-navigation">
-				<ul class="nav navbar-nav navbar-right main-navigation text-uppercase">
-					<li><a href="#home" class="smoothScroll">Home</a></li>
-					<li><a href="#work" class="smoothScroll">My Work</a></li>
-					<li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
-					<li><a href="#resume" class="smoothScroll">Resume</a></li>
-					<li><a href="#about" class="smoothScroll">About</a></li>
-					<li><a href="#contact" class="smoothScroll">Contact</a></li>
-				</ul>
-			</nav>
-
-		</div>
-	</div>
-	<!-- END NAVIGATION -->
-
-	<!-- START HOME -->
+<?php 
+	include 'partials/header.php';
+?>
+<!-- START HOME -->
 	<section id="home" class="templatemo-home">
 		<div class="container">
 			<div class="row">
@@ -304,39 +255,9 @@ https://templatemo.com/tm-464-ultra-profile
 	<!-- END SOCIAL -->
 
 	<!-- START CONTACT -->
-	<section id="contact" class="tm-contact">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">					
-					<h2 class="title">Drop <strong>me a line</strong></h2>
-					<hr>					
-				</div>
-				<div class="col-md-1 col-sm-1"></div>
-				<div class="col-md-10 col-sm-10">
-					<form action="#" method="post">
-						<div class="col-md-6 col-sm-6">
-							<input class="form-control" type="text" placeholder="Your Name">
-						</div>
-						<div class="col-md-6 col-sm-6">
-							<input class="form-control" type="email" placeholder="Your Email">
-						</div>
-						<div class="col-md-12 col-sm-12">
-							<input class="form-control" type="text" placeholder="Your Subject">
-							<textarea class="form-control" placeholder="Your Message" rows="6"></textarea>
-						</div>
-						<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
-							<input class="form-control" type="submit" value="SHOOT MESSAGE">
-						</div>
-					</form>
-				</div>
-				<div class="col-md-1 col-sm-1"></div>
-				<div class="col-md-12 col-sm-12">
-					<p>Copyright &copy; 2018 Ultra Profile
-                    . design: <a rel="nofollow noopener" href="https://templatemo.com">template mo</a></p>
-				</div>
-			</div>
-		</div>
-	</section>
+	 <?php
+		include 'partials/footer.php';
+	 ?>
 	<!-- END CONTACT -->
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
