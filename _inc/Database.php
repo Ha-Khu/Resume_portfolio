@@ -25,9 +25,4 @@ class Database {
     }
 
 }
-//TEST:
-$db = new Database();
-echo "<p>JJJJJJJ</p>";
-var_dump($db->getPdo());
-echo "<p>FUNGUJE AJ TOTO</p>";
 ?>
