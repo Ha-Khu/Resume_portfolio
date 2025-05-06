@@ -1,13 +1,12 @@
 <?php
 class Contact {
-    private $db;
 
-    public function __construct($dbConnection) {
-        $this->db = $dbConnection;
+    public function __construct(Database $database) {
+        $this->pdo = $database->getPdo();
     }
 
     public function create($name, $email, $subject, $message) {
-        $stmt = $this->db->prepare("INSERT INTO contacts (name, email, subject, message) VALUES (?, ?, ?, ?)");
+        $stmt = $this->pdo->prepare("INSERT INTO contacts (name, email, subject, message) VALUES (?, ?, ?, ?)");
         return $stmt->execute([$name, $email, $subject, $message]); 
     }
 
@@ -30,6 +29,12 @@ class Contact {
     public function delete($id){
         $stmt = $this->db->prepare("DELETE FROM contacts WHERE id = ?");
         return $stmt->execute([id]);
+    }
+
+    public function getAllContacts() {
+        $sql = "SELECT * FROM contacts ORDER BY created_at DESC";
+        $stmt = $this->pdo->query($sql);
+        return $stmt->fetchAll();
     }
 
 }
