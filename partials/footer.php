@@ -7,7 +7,7 @@
 				</div>
 				<div class="col-md-1 col-sm-1"></div>
 				<div class="col-md-10 col-sm-10">
-					<form action="" method="post">
+					<form action="contact-create.php" method="post">
 						<div class="col-md-6 col-sm-6">
 							<input class="form-control" type="text" placeholder="Your Name" id="name" name="name" required>
 						</div>
