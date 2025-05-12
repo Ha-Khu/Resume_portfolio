@@ -54,6 +54,9 @@ $contacts = $contact->getAllContacts();
                         <td><?= htmlspecialchars($row['subject']) ?></td>
                         <td><?= nl2br(htmlspecialchars($row['message'])) ?></td>
                         <td><?= htmlspecialchars($row['created_at']) ?></td>
+                        <td>
+                        <a href="contact-delete.php?id=<?= $row['id'] ?>" onclick="return confirm('Naozaj chceš vymazať tento kontakt?');">Vymazať</a>
+                        </td>
                     </tr>
                     <?php endforeach; ?>
             </tbody>
