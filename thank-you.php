@@ -6,13 +6,13 @@
     <title>Ďakujem</title>
 </head>
 <body>
-    <h1>Ďakujem za správu!</h1>
-    <p>Vaša správa bola úspešne odoslaná <br></p>
-    <p>čoskoro sa Vám ozvem</p>
-
     <?php
         if(isset($_GET['error'])) {
             echo "<p>Nastala chyba pri odosielaní správy skúste to znova.</p>";
+        } else {
+            echo "<h1>Ďakujem za správu!</h1>
+                  <p>Vaša správa bola úspešne odoslaná <br></p>
+                  <p>čoskoro sa Vám ozvem</p>";
         }
     ?>
 </body>
