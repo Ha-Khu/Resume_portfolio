@@ -56,6 +56,7 @@ $contacts = $contact->getAllContacts();
                         <td><?= htmlspecialchars($row['created_at']) ?></td>
                         <td>
                         <a href="contact-delete.php?id=<?= $row['id'] ?>" onclick="return confirm('Naozaj chceš vymazať tento kontakt?');">Vymazať</a>
+                        <a href="contact-edit.php?id=<?= $row['id']?>">Upraviť</a>
                         </td>
                     </tr>
                     <?php endforeach; ?>
