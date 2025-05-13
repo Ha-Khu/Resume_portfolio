@@ -2,6 +2,13 @@
 require_once('_inc/Classes/Contact.php');
 require_once('_inc/Classes/Database.php');
 
+session_start();
+
+if(!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
+    header('Location: login.php');
+    exit;
+}
+
 $db = new Database();
 $contact = new Contact($db);
 $contacts = $contact->getAllContacts();
@@ -31,6 +38,7 @@ $contacts = $contact->getAllContacts();
     </style>
 </head>
 <body>
+    <a href="logout.php">ODHLÁSIŤ SA</a>
     <?php if(empty($contacts)): ?>
         <p>Žiadne kontakty neobli nájdené</p>
     <?php else: ?>
